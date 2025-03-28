@@ -1,9 +1,51 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.3">
   <diagram name="第 1 页" id="fOuAMprKsr2X9MjwaEno">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="z3Is95D2eXdALTqiWvSm-1" value="LogLevel" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="130" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="z3Is95D2eXdALTqiWvSm-2" value="+ value: enum class" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="z3Is95D2eXdALTqiWvSm-1">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="z3Is95D2eXdALTqiWvSm-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="z3Is95D2eXdALTqiWvSm-1">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="z3Is95D2eXdALTqiWvSm-4" value="+ ToString(value): static const char*" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="z3Is95D2eXdALTqiWvSm-1">
+          <mxGeometry y="60" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="z3Is95D2eXdALTqiWvSm-5" value="LogMessage" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="340" width="300" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="z3Is95D2eXdALTqiWvSm-6" value="+ ptr: std::shared_ptr&amp;lt;LogMessage&amp;gt;&lt;div&gt;+ line_: size_t&lt;/div&gt;&lt;div&gt;+ ctime_: time_t&lt;/div&gt;&lt;div&gt;+ file_name_: std::string&lt;/div&gt;&lt;div&gt;+ name_: std::string&lt;/div&gt;&lt;div&gt;&lt;div&gt;+ payload_: std::string&lt;/div&gt;&lt;div&gt;+ tid_: std::thread::id&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;+ level_: LogLevel::value&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="z3Is95D2eXdALTqiWvSm-5">
+          <mxGeometry y="26" width="300" height="184" as="geometry" />
+        </mxCell>
+        <mxCell id="z3Is95D2eXdALTqiWvSm-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="z3Is95D2eXdALTqiWvSm-5">
+          <mxGeometry y="210" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="z3Is95D2eXdALTqiWvSm-8" value="+ LogMessage():&amp;nbsp;&lt;div&gt;+ LogMessage(&lt;span style=&quot;background-color: transparent;&quot;&gt;LogLevel::value, std::string, size_t,&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;std::string, std::string&lt;/span&gt;): type&lt;/div&gt;&lt;div&gt;+ format(): std::string&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="z3Is95D2eXdALTqiWvSm-5">
+          <mxGeometry y="218" width="300" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="z3Is95D2eXdALTqiWvSm-9" value="Classname" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="194" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="z3Is95D2eXdALTqiWvSm-10" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="z3Is95D2eXdALTqiWvSm-9">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="z3Is95D2eXdALTqiWvSm-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="z3Is95D2eXdALTqiWvSm-9">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="z3Is95D2eXdALTqiWvSm-12" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="z3Is95D2eXdALTqiWvSm-9">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="z3Is95D2eXdALTqiWvSm-14" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="479.5" y="240" as="sourcePoint" />
+            <mxPoint x="480" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
