@@ -28,24 +28,6 @@
         <mxCell id="z3Is95D2eXdALTqiWvSm-8" value="+ LogMessage():&amp;nbsp;&lt;div&gt;+ LogMessage(&lt;span style=&quot;background-color: transparent;&quot;&gt;LogLevel::value, std::string, size_t,&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;std::string, std::string&lt;/span&gt;): type&lt;/div&gt;&lt;div&gt;+ format(): std::string&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="z3Is95D2eXdALTqiWvSm-5" vertex="1">
           <mxGeometry y="218" width="300" height="142" as="geometry" />
         </mxCell>
-        <mxCell id="IWvmdIMH10l5KPkmLy84-1" value="LogFlush" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-80" y="210" width="210" height="148" as="geometry" />
-        </mxCell>
-        <mxCell id="IWvmdIMH10l5KPkmLy84-25" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;entryX=0.5;entryY=1.154;entryDx=0;entryDy=0;entryPerimeter=0;" parent="IWvmdIMH10l5KPkmLy84-1" target="IWvmdIMH10l5KPkmLy84-24" edge="1">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="100" as="sourcePoint" />
-            <mxPoint x="260" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="IWvmdIMH10l5KPkmLy84-2" value="+ using ptr : std::shared_ptr&amp;lt;LogFlush&amp;gt;: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="IWvmdIMH10l5KPkmLy84-1" vertex="1">
-          <mxGeometry y="26" width="210" height="54" as="geometry" />
-        </mxCell>
-        <mxCell id="IWvmdIMH10l5KPkmLy84-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="IWvmdIMH10l5KPkmLy84-1" vertex="1">
-          <mxGeometry y="80" width="210" height="8" as="geometry" />
-        </mxCell>
-        <mxCell id="IWvmdIMH10l5KPkmLy84-4" value="+&amp;nbsp;virtual Flush(const char *, size_t ): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="IWvmdIMH10l5KPkmLy84-1" vertex="1">
-          <mxGeometry y="88" width="210" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="IWvmdIMH10l5KPkmLy84-5" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;exitX=0.506;exitY=1.02;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="z3Is95D2eXdALTqiWvSm-4" target="z3Is95D2eXdALTqiWvSm-5" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="470" y="240" as="sourcePoint" />
@@ -100,9 +82,9 @@
         <mxCell id="IWvmdIMH10l5KPkmLy84-24" value="+ CreateLog&amp;lt;...&amp;gt;() {static}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="IWvmdIMH10l5KPkmLy84-21" vertex="1">
           <mxGeometry y="60" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="IWvmdIMH10l5KPkmLy84-26" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.431;exitY=1.033;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.475;entryY=-0.023;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="IWvmdIMH10l5KPkmLy84-4" target="IWvmdIMH10l5KPkmLy84-7" edge="1">
+        <mxCell id="IWvmdIMH10l5KPkmLy84-26" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.431;exitY=1.033;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.475;entryY=-0.023;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="IWvmdIMH10l5KPkmLy84-7" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="10" y="500" as="sourcePoint" />
+            <mxPoint x="10.510000000000218" y="359.9799999999999" as="sourcePoint" />
             <mxPoint x="-110" y="440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
@@ -250,10 +232,19 @@
             <mxPoint x="-610" y="60" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IWvmdIMH10l5KPkmLy84-27" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=-0.013;exitY=0.228;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.571;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="IWvmdIMH10l5KPkmLy84-11" edge="1" source="IWvmdIMH10l5KPkmLy84-4">
+        <mxCell id="IWvmdIMH10l5KPkmLy84-27" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=-0.013;exitY=0.228;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.571;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="IWvmdIMH10l5KPkmLy84-11" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="-260" y="500" as="sourcePoint" />
+            <mxPoint x="-82.72999999999979" y="311.67999999999995" as="sourcePoint" />
             <mxPoint x="-170" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rus0YeZyXGwCTxSHVyxS-50" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;LogFlush&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ using ptr : std::shared_ptr&amp;lt;LogFlush&amp;gt;: type&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;virtual Flush(const char *, size_t ): type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="223" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Rus0YeZyXGwCTxSHVyxS-51" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;entryX=0.482;entryY=1.058;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="IWvmdIMH10l5KPkmLy84-24">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="17" y="220" as="sourcePoint" />
+            <mxPoint x="-140" y="280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
